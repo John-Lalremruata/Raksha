@@ -1,0 +1,137 @@
+﻿:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+    a:hover {
+        color: #535bf2;
+    }
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    min-width: 500px;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+/* ✅ Login Box Styling */
+.login-box {
+    background: #fff;
+    color: #213547;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    max-width: 90%; /* responsive for mobile */
+    text-align: center;
+}
+
+    .login-box h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .login-box label {
+        display: block;
+        text-align: left;
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+        .login-box input:focus {
+            border-color: #646cff;
+            box-shadow: 0 0 6px rgba(100, 108, 255, 0.4);
+            outline: none;
+        }
+
+/* ✅ Optional password toggle button */
+.password-wrapper {
+    position: relative;
+}
+
+    .password-wrapper input {
+        padding-right: 2.5rem; /* space for toggle button */
+    }
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #646cff;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: inherit;
+    background-color: #646cff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    width: 100%;
+}
+
+    button:hover {
+        background-color: #535bf2;
+    }
+
+    button:focus,
+    button:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #646cff;
+        color: #fff;
+    }
+}
