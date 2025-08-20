@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:49848",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "E:\\Git Collab\\Raksha\\FontEnd\\FrontEnd\\FrontEnd.Server\\..\\frontend.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
